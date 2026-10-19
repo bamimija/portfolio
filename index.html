@@ -67,39 +67,63 @@
         <p>문제를 발견하고, 의미 있는 변화를<br>만들어낸 프로젝트를 소개합니다.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card project-card-large">
-          <div class="project-art art-navy">
+        <article class="project-card project-card-large" data-project="lumio" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Lumio 프로젝트 상세 정보 보기">
+          <div class="project-art art-navy" aria-hidden="true">
             <div class="art-window">
-              <span class="window-label">morrow</span>
+              <span class="window-label">lumio</span>
               <div class="window-balance"><strong>Good morning,<br>Jisoo</strong><span class="balance-value">$ 12,480.00</span></div>
               <div class="window-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
             </div>
           </div>
           <div class="project-info">
-            <div><span class="project-type">Fintech · 2024</span><h3>Morrow 금융 경험 리디자인</h3></div>
-            <a href="#contact" aria-label="Morrow 프로젝트 문의">↗</a>
+            <div><span class="project-type">Fintech · 2024</span><h3>Lumio 금융 경험 리디자인</h3></div>
+            <span class="project-card-arrow" aria-hidden="true">↗</span>
           </div>
         </article>
-        <article class="project-card">
-          <div class="project-art art-lime">
+        <article class="project-card" data-project="mori" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Mori 프로젝트 상세 정보 보기">
+          <div class="project-art art-lime" aria-hidden="true">
             <div class="phone"><div class="phone-notch"></div><div class="phone-line"></div><b>오늘의<br>루틴</b><div class="phone-circle"></div><small>06:30 AM</small></div>
           </div>
           <div class="project-info">
-            <div><span class="project-type">Wellness · 2023</span><h3>하루를 바꾸는 루틴</h3></div>
-            <a href="#contact" aria-label="루틴 프로젝트 문의">↗</a>
+            <div><span class="project-type">Wellness · 2023</span><h3>Mori 하루 루틴 앱</h3></div>
+            <span class="project-card-arrow" aria-hidden="true">↗</span>
           </div>
         </article>
-        <article class="project-card">
-          <div class="project-art art-peach">
+        <article class="project-card" data-project="ondo" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Ondo Studio 프로젝트 상세 정보 보기">
+          <div class="project-art art-peach" aria-hidden="true">
             <div class="ticket"><span>WEEKEND<br>GETAWAY</span><strong>02—04<br><small>BUSAN</small></strong><i>✦</i></div>
           </div>
           <div class="project-info">
-            <div><span class="project-type">Travel · 2023</span><h3>주말 여행을 더 가볍게</h3></div>
-            <a href="#contact" aria-label="여행 프로젝트 문의">↗</a>
+            <div><span class="project-type">Travel · 2023</span><h3>Ondo Studio 여행 경험</h3></div>
+            <span class="project-card-arrow" aria-hidden="true">↗</span>
           </div>
         </article>
       </div>
     </section>
+
+    <div class="project-modal" id="project-modal" hidden>
+      <section class="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" aria-describedby="project-modal-description" tabindex="-1">
+        <button class="project-modal-close" type="button" aria-label="프로젝트 상세 창 닫기">×</button>
+        <p class="project-modal-note">포트폴리오 예시 정보 · 실제 프로젝트 정보가 아닙니다.</p>
+        <p class="project-modal-type" id="project-modal-type"></p>
+        <h2 id="project-modal-title"></h2>
+        <p class="project-modal-description" id="project-modal-description"></p>
+        <dl class="project-modal-details">
+          <div>
+            <dt>담당 역할</dt>
+            <dd id="project-modal-role"></dd>
+          </div>
+          <div>
+            <dt>사용 기술</dt>
+            <dd><ul id="project-modal-technologies"></ul></dd>
+          </div>
+          <div>
+            <dt>주요 성과</dt>
+            <dd id="project-modal-outcome"></dd>
+          </div>
+        </dl>
+      </section>
+    </div>
 
     <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
       <div class="contact-copy">
